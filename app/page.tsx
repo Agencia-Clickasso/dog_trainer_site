@@ -51,10 +51,12 @@ export default function HomePage() {
           <div className="md:w-1/2 relative mt-12 md:mt-0">
             <div className="relative w-[400px] h-[400px] mx-auto">
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div className="w-32 h-32 rounded-full bg-[#F7941D] flex items-center justify-center">
-                  <div className="w-20 h-20 text-white">
-                    {/* Central dog icon */}
-                  </div>
+                <div className="w-64 h-64 rounded-full bg-[#F7941D] flex items-center justify-center">
+                  <img 
+                    src="/images/logo.jpg" 
+                    alt="Felix Adestramento Logo" 
+                    className="w-52 h-52 object-cover rounded-full"
+                  />
                 </div>
               </div>
             </div>
