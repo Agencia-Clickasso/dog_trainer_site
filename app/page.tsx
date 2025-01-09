@@ -18,12 +18,12 @@ export default function HomePage() {
             Felix Adestramento
           </div>
           <div className="hidden md:flex items-center gap-6 text-white">
-            <Link href="#" className="hover:opacity-80">História</Link>
-            <Link href="#" className="hover:opacity-80">Materiais Gratuitos</Link>
-            <Link href="#" className="hover:opacity-80">Cursos Online</Link>
+            {/* <Link href="#" className="hover:opacity-80">História</Link> */}
+            {/* <Link href="#" className="hover:opacity-80">Materiais Gratuitos</Link> */}
+            {/* <Link href="#" className="hover:opacity-80">Cursos Online</Link> */}
             <Link href="#" className="hover:opacity-80">Produtos</Link>
             <Link href="#" className="hover:opacity-80">Blog</Link>
-            <Link href="#" className="hover:opacity-80">Imersão Presencial</Link>
+            {/* <Link href="#" className="hover:opacity-80">Imersão Presencial</Link> */}
             <Link href="#" className="hover:opacity-80">Contato</Link>
           </div>
           <div className="flex items-center gap-4">
@@ -42,9 +42,9 @@ export default function HomePage() {
             <p className="text-lg opacity-90">
               Jefferson Felix, adestrador de cães desde 2004
             </p>
-            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-black">
+            {/* <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-black">
               Cursos Online
-            </Button>
+            </Button> */}
           </div>
           
           {/* Dog Icons Circle */}
@@ -77,6 +77,15 @@ export default function HomePage() {
               <p className="max-w-md mx-auto">
                 Especialista em técnicas de psicologia aplicada no funcionamento da mente dos cães e associado as teorias mais modernas de aprendizado, temos mais de 1000 famílias e seus cães atendidos ao longo de mais de 20 anos.
               </p>
+              <Button 
+                variant="outline" 
+                className="bg-transparent border-white text-white hover:bg-white hover:text-[#5BC0DE]"
+                asChild
+              >
+                <Link href="https://blog.felixpet.com.br">
+                  Acessar o Blog
+                </Link>
+              </Button>
             </div>
           </div>
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react'
+import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin, Instagram } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -12,7 +12,15 @@ export function Footer() {
               Especialistas em comportamento e treinamento canino desde 2004.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-white">
+              <Link 
+                href="https://www.instagram.com/felix_adestramento/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white"
+              >
+                <Instagram className="w-5 h-5" />
+              </Link>
+              {/* <Link href="#" className="hover:text-white">
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link href="#" className="hover:text-white">
@@ -20,22 +28,22 @@ export function Footer() {
               </Link>
               <Link href="#" className="hover:text-white">
                 <Linkedin className="w-5 h-5" />
-              </Link>
+              </Link> */}
             </div>
           </div>
           
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white">Links Rápidos</h4>
             <ul className="space-y-2">
-              <li>
+              {/* <li>
                 <Link href="#" className="hover:text-white">História</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link href="#" className="hover:text-white">Materiais Gratuitos</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link href="#" className="hover:text-white">Cursos Online</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="#" className="hover:text-white">Blog</Link>
               </li>
@@ -51,11 +59,11 @@ export function Footer() {
               <li>
                 <Link href="#" className="hover:text-white">Consultoria</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#" className="hover:text-white">Imersão Presencial</Link>
-              </li>
+              </li> */}
               <li>
-                <Link href="#" className="hover:text-white">Produtos</Link>
+                {/* <Link href="#" className="hover:text-white">Produtos</Link> */}
               </li>
             </ul>
           </div>
@@ -65,7 +73,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>contato@felixadestramento.com</span>
+                <span>contato@felixadestramento.com.br</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />

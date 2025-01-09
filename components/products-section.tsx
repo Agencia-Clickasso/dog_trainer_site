@@ -9,14 +9,14 @@ export function ProductsSection() {
           <div className="space-y-6">
             <span className="text-white text-lg font-medium">NOSSOS PRODUTOS</span>
             <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              Entendendo o Aprendizado Canino: O Guia Definitivo
+              Dono Feliz(EM BREVE)
             </h2>
             <p className="text-white text-lg">
-              O curso online mais completo sobre adestramento canino em língua portuguesa
+              O curso online sobre enriquecimento ambiental para cães.
             </p>
-            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#5BC0DE]">
+            {/* <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#5BC0DE]">
               Saiba Mais
-            </Button>
+            </Button> */}
           </div>
           
           <div className="flex justify-center">
@@ -32,7 +32,7 @@ export function ProductsSection() {
         </div>
 
         {/* Pagination */}
-        <div className="flex justify-center items-center gap-2 mt-16">
+        {/* <div className="flex justify-center items-center gap-2 mt-16">
           {[1, 2, 3, 4].map((num) => (
             <button
               key={num}
@@ -46,7 +46,7 @@ export function ProductsSection() {
           <button className="px-4 py-1 rounded-full border-2 border-white text-white hover:bg-white hover:text-[#5BC0DE] transition-colors">
             mais
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   )
