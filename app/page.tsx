@@ -7,6 +7,7 @@ import { BlogSection } from '../components/blog-section'
 import { ProductsSection } from '../components/products-section'
 import { WelcomeSection } from '../components/welcome-section'
 import { Footer } from '../components/footer'
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
@@ -52,10 +53,12 @@ export default function HomePage() {
             <div className="relative w-[400px] h-[400px] mx-auto">
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="w-64 h-64 rounded-full bg-[#F7941D] flex items-center justify-center">
-                  <img 
+                  <Image 
                     src="/images/logo.jpg" 
                     alt="Felix Adestramento Logo" 
-                    className="w-52 h-52 object-cover rounded-full"
+                    width={208}
+                    height={208}
+                    className="object-cover rounded-full"
                   />
                 </div>
               </div>
