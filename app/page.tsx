@@ -12,7 +12,7 @@ import Image from 'next/image'
 export default function HomePage() {
   return (
     <div className="min-h-screen">
-      <div className="bg-gradient-to-b from-[#5BC0DE] to-[#5CD6B3]">
+      <div className="bg-gradient-to-b from-[#3DADD1] to-[#45C4A4]">
         {/* Navigation */}
         <nav className="flex items-center justify-between p-4 md:p-6">
           <div className="text-white text-2xl font-bold">
