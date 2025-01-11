@@ -92,7 +92,7 @@ export function BlogSection() {
         {/* Social Share Buttons */}
         <div className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-r-lg p-2 space-y-3">
           <a 
-            href="https://wa.me/5511993285473" 
+            href="https://wa.me/5511993285473?text=Ol%C3%A1%20Felix%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20adestramento." 
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="Share on WhatsApp" 

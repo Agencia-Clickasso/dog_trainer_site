@@ -64,7 +64,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>contato@felixadestramento.com.br</span>
+                <span>contato@felixpet.com.br</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
