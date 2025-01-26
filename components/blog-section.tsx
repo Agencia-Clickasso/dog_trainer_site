@@ -1,64 +1,22 @@
-import { Dog, Syringe, PawPrint } from 'lucide-react'
+import { Dog } from 'lucide-react'
 import Link from 'next/link'
 
 export function BlogSection() {
   const articles = [
     {
       icon: <Dog className="w-12 h-12" />,
-      category: 'ARTIGOS',
-      title: 'Cores e pigmentação',
+      category: 'COMPORTAMENTO ANIMAL',
+      title: 'Conectando Pessoas e Cães: Uma Reflexão Sobre a Amizade Mais Antiga do Mundo',
       bg: 'bg-[#556B2F]',
-      href: '#'
+      href: 'https://blog.felixpet.com.br/post/conectando-pessoas-e-caes/'
     },
     {
       icon: <Dog className="w-12 h-12" />,
-      category: 'ARTIGOS',
-      title: 'A criação do cão Pastor Alemão: O tripé - desempenho, saúde, morfologia',
-      bg: 'bg-[#556B2F]',
-      href: '#'
-    },
-    {
-      icon: <PawPrint className="w-12 h-12" />,
-      category: 'ARTIGOS',
-      title: 'Genética em cães de trabalho',
-      bg: 'bg-[#556B2F]',
-      href: '#'
-    },
-    {
-      icon: <PawPrint className="w-12 h-12" />,
-      category: 'ARTIGOS',
-      title: 'Cães de Esporte vs. Cães Reais',
-      bg: 'bg-[#556B2F]',
-      href: '#'
-    },
-    {
-      icon: <Dog className="w-12 h-12" />,
-      category: 'ADESTRAMENTO',
-      title: 'Técnicas de Adestramento',
+      category: 'PSICOLOGIA CANINA',
+      title: 'Felix Adestramento: Psicologia Canina em Foco',
       bg: 'bg-[#4A90E2]',
-      href: '#'
-    },
-    {
-      icon: <Syringe className="w-12 h-12" />,
-      category: 'ARTIGOS',
-      title: 'Saúde Canina',
-      bg: 'bg-[#556B2F]',
-      href: '#'
-    },
-    {
-      icon: <Dog className="w-12 h-12" />,
-      category: 'ARTIGOS',
-      title: 'Comportamento Canino',
-      bg: 'bg-[#556B2F]',
-      href: '#'
-    },
-    {
-      icon: <Dog className="w-12 h-12" />,
-      category: 'CURSOS',
-      title: 'Cursos Disponíveis',
-      bg: 'bg-[#F7941D]',
-      href: '#'
-    },
+      href: 'https://blog.felixpet.com.br/post/introducao/'
+    }
   ]
 
   return (
@@ -69,7 +27,7 @@ export function BlogSection() {
           <p className="text-gray-600">Artigos, novidades e dicas</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {articles.map((article, index) => (
             <Link 
               key={index} 
