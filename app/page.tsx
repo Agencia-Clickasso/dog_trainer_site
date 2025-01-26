@@ -8,8 +8,17 @@ import { ProductsSection } from '../components/products-section'
 import { WelcomeSection } from '../components/welcome-section'
 import { Footer } from '../components/footer'
 import Image from 'next/image'
+import { useState } from 'react'
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "../components/ui/dialog"
 
 export default function HomePage() {
+  const [isFormOpen, setIsFormOpen] = useState(false)
+
   return (
     <div className="min-h-screen">
       <div className="bg-gradient-to-b from-[#3DADD1] to-[#45C4A4]">
@@ -36,16 +45,34 @@ export default function HomePage() {
         {/* Hero Section */}
         <main className="container mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-white space-y-6">
-            <h2 className="text-xl font-medium tracking-wide">CULTURA CANINA SAUDÁVEL</h2>
+            <h2 className="text-xl font-medium tracking-wide">CONECTANDO CÃES E PESSOAS!</h2>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Conheça como funciona o aprendizado canino e transforme a sua relação com seu cão
+              Como o Seu Cão Aprende Melhor e a Magia do Adestramento Canino
             </h1>
             <p className="text-lg opacity-90">
-              Jefferson Felix, adestrador de cães desde 2004
+              Quer entender como seu melhor amigo de quatro patas aprende e como o adestramento pode melhorar a relação entre vocês? Aqui vai!
             </p>
-            {/* <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-black">
-              Cursos Online
-            </Button> */}
+            <div className="space-y-4">
+              <Button 
+                variant="outline" 
+                className="bg-transparent border-white text-white hover:bg-white hover:text-[#5BC0DE]"
+                asChild
+              >
+                <Link href="https://blog.felixpet.com.br">
+                  Descubra em Nosso Blog
+                </Link>
+              </Button>
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold mb-4">Quer Aprender Como Ter Mais Atenção do Seu Cão?</h3>
+                <Button 
+                  variant="outline" 
+                  className="bg-transparent border-white text-white hover:bg-white hover:text-[#5BC0DE]"
+                  onClick={() => setIsFormOpen(true)}
+                >
+                  Inscreva-se Agora
+                </Button>
+              </div>
+            </div>
           </div>
           
           {/* Dog Icons Circle */}
@@ -103,6 +130,23 @@ export default function HomePage() {
       <ProductsSection />
       <WelcomeSection />
       <Footer />
+
+      {/* Form Modal */}
+      <Dialog open={isFormOpen} onOpenChange={setIsFormOpen}>
+        <DialogContent className="max-w-3xl h-[80vh]">
+          <DialogHeader>
+            <DialogTitle>Inscreva-se para Aprender Mais</DialogTitle>
+          </DialogHeader>
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeI0U4uogRcb5x8a1Lo-2umJ0iVxdQO5MSUBZwIJuWuAKn2uQ/viewform?embedded=true" 
+            width="100%" 
+            height="100%" 
+            className="border-0"
+          >
+            Carregando formulário...
+          </iframe>
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }
