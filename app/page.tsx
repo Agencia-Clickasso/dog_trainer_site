@@ -16,6 +16,7 @@ import {
   DialogTitle,
 } from "../components/ui/dialog"
 import { NeighborhoodsSection } from '../components/neighborhoods-section'
+import { Header } from '@/components/header'
 
 export default function HomePage() {
   const [isFormOpen, setIsFormOpen] = useState(false)
@@ -23,26 +24,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       <div className="bg-gradient-to-b from-[#3DADD1] to-[#45C4A4]">
-        {/* Navigation */}
-        <nav className="flex items-center justify-between p-4 md:p-6">
-          <div className="text-white text-2xl font-bold">
-            Felix Adestramento
-          </div>
-          <div className="hidden md:flex items-center gap-6 text-white">
-            {/* <Link href="#" className="hover:opacity-80">História</Link> */}
-            {/* <Link href="#" className="hover:opacity-80">Materiais Gratuitos</Link> */}
-            {/* <Link href="#" className="hover:opacity-80">Cursos Online</Link> */}
-            <Link href="#" className="hover:opacity-80">Produtos</Link>
-            <Link href="#" className="hover:opacity-80">Blog</Link>
-            {/* <Link href="#" className="hover:opacity-80">Imersão Presencial</Link> */}
-            <Link href="#" className="hover:opacity-80">Contato</Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Search className="text-white w-5 h-5" />
-            <span className="text-white">BR</span>
-          </div>
-        </nav>
-
+        <Header />
+        
         {/* Hero Section */}
         <main className="container mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-white space-y-6">

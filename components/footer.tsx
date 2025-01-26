@@ -36,7 +36,7 @@ export function Footer() {
                 <Link href="#" className="hover:text-white">Cursos Online</Link>
               </li> */}
               <li>
-                <Link href="#" className="hover:text-white">Blog</Link>
+                <Link href="https://blog.felixpet.com.br" className="hover:text-white">Blog</Link>
               </li>
             </ul>
           </div>
@@ -45,10 +45,10 @@ export function Footer() {
             <h4 className="text-lg font-semibold text-white">Serviços</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-white">Adestramento</Link>
+                <Link href="/adestramento" className="hover:text-white">Adestramento</Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">Consultoria</Link>
+                <Link href="/consultoria" className="hover:text-white">Consultoria</Link>
               </li>
               {/* <li>
                 <Link href="#" className="hover:text-white">Imersão Presencial</Link>
