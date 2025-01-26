@@ -6,7 +6,9 @@ import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const Dialog = DialogPrimitive.Root
-const DialogTrigger = DialogPrimitive.Trigger
+
+const DialogTrigger = DialogPrimitive.Trigger // eslint-disable-line @typescript-eslint/no-unused-vars
+
 const DialogPortal = DialogPrimitive.Portal
 const DialogOverlay = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Overlay>,
