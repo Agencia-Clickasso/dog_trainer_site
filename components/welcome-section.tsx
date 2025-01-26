@@ -9,13 +9,24 @@ export function WelcomeSection() {
             <h2 className="text-4xl font-bold text-gray-800">Olá, seja bem-vindo!</h2>
             
             <div className="space-y-4 text-gray-600">
-              <p>Jefferson Felix, adestrador de cães desde 2004</p>
+              <h3 className="text-2xl font-semibold">Sobre Nós</h3>
+              <p>Bem-vindo à nossa empresa de adestramento canino, onde transformamos a relação entre cães e humanos. Com mais de 20 anos de experiência e uma certificação da renomada Escola K9 Sarge, nossa paixão e dedicação são voltadas para promover uma convivência harmoniosa e feliz.</p>
 
-              <p>Em 2016 fundou a Felix Adestramento e Comportamento canino com o objetivo principal de conectar pessoas e cães promovendo assim uma mair integração entre os cães e suas familias atendendo todas as nuances do fenômeno crescente das famílias multiespecies.</p>
+              <h3 className="text-2xl font-semibold">Nossa Abordagem</h3>
+              <p>Utilizamos o sistema das Leis de Efeito, o famoso condicionamento operante, e técnicas avançadas de aprendizagem baseadas no behaviorismo. Essa abordagem garante que cada treinamento seja eficaz e personalizado, respeitando o ritmo e a individualidade de cada cão.</p>
 
-              <p>Respeitar a natureza canina é a chave para que seu cão consiga aprender a conviver em um ambiente humano e urbano.</p>
+              <h3 className="text-2xl font-semibold">Nossas Qualificações</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Experiência Ampla: Mais de 20 anos dedicados ao adestramento e ao bem-estar canino.</li>
+                <li>Certificação K9 Sarge: Formação de alta qualidade que assegura métodos avançados e eficazes.</li>
+                <li>Métodos Científicos: Aplicamos princípios behavioristas para ensinar e reforçar comportamentos positivos.</li>
+              </ul>
 
-              <p>Especialista em tecnicas de psicologia aplicada no funcionamento da mente dos cães e associado as teorias mais modernas de aprendizado temos mais  de 1000 familias e seus cães atrndidos ao longo de mais de 20 anos.</p>
+              <h3 className="text-2xl font-semibold">Nossa Missão</h3>
+              <p>Nossa missão é transformar a vida dos cães e seus tutores, fortalecendo os laços entre eles e promovendo comportamentos equilibrados. Com paciência, respeito e técnicas adequadas, acreditamos que todos os cães podem aprender e viver felizes ao lado de seus humanos.</p>
+
+              <h3 className="text-2xl font-semibold">Conectando Cães a Pessoas</h3>
+              <p>Acreditamos que cada cão tem o potencial de ser um companheiro incrível, e estamos aqui para ajudar a construir essa conexão.</p>
             </div>
           </div>
           

@@ -15,6 +15,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "../components/ui/dialog"
+import { NeighborhoodsSection } from '../components/neighborhoods-section'
 
 export default function HomePage() {
   const [isFormOpen, setIsFormOpen] = useState(false)
@@ -52,17 +53,7 @@ export default function HomePage() {
             <p className="text-lg opacity-90">
               Quer entender como seu melhor amigo de quatro patas aprende e como o adestramento pode melhorar a relação entre vocês? Aqui vai!
             </p>
-            <div className="space-y-4">
-              <Button 
-                variant="outline" 
-                className="bg-transparent border-white text-white hover:bg-white hover:text-[#5BC0DE]"
-                asChild
-              >
-                <Link href="https://blog.felixpet.com.br">
-                  Descubra em Nosso Blog
-                </Link>
-              </Button>
-              <div className="mt-8">
+            <div className="mt-8">
                 <h3 className="text-xl font-semibold mb-4">Quer Aprender Como Ter Mais Atenção do Seu Cão?</h3>
                 <Button 
                   variant="outline" 
@@ -72,7 +63,6 @@ export default function HomePage() {
                   Inscreva-se Agora
                 </Button>
               </div>
-            </div>
           </div>
           
           {/* Dog Icons Circle */}
@@ -129,6 +119,7 @@ export default function HomePage() {
       <BlogSection />
       <ProductsSection />
       <WelcomeSection />
+      <NeighborhoodsSection />
       <Footer />
 
       {/* Form Modal */}
