@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { Search } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { BlogSection } from '../components/blog-section'
 import { ProductsSection } from '../components/products-section'

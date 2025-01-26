@@ -1,25 +1,22 @@
-import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image"
-
-const neighborhoods = [
-  "Mooca",
-  "Vila Prudente",
-  "Brás",
-  "Belenzinho",
-  "Tatuapé",
-  "Parque da Mooca",
-  "Ipiranga",
-  "Água Rasa",
-  "Quarta Parada",
-  "Cambuci",
-  "Santana",
-  "Vila Maria",
-  "Vila Guilherme",
-  "Carrão",
-  "Vila Formosa"
-];
-
 export function NeighborhoodsSection() {
+  const neighborhoods = [
+    "Mooca",
+    "Vila Prudente",
+    "Brás",
+    "Belenzinho",
+    "Tatuapé",
+    "Parque da Mooca",
+    "Ipiranga",
+    "Água Rasa",
+    "Quarta Parada",
+    "Cambuci",
+    "Santana",
+    "Vila Maria",
+    "Vila Guilherme",
+    "Carrão",
+    "Vila Formosa"
+  ];
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
