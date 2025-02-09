@@ -80,6 +80,17 @@ export function Footer() {
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p>&copy; {new Date().getFullYear()} Felix Adestramento. Todos os direitos reservados.</p>
+          <p className="mt-2 text-sm">
+            Desenvolvido por{' '}
+            <Link 
+              href="https://www.clickasso.com.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-rose-700 hover:text-rose-800 transition-colors"
+            >
+              clickasso
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
