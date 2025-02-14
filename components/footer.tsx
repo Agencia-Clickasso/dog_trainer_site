@@ -32,9 +32,16 @@ export function Footer() {
               {/* <li>
                 <Link href="#" className="hover:text-white">Materiais Gratuitos</Link>
               </li> */}
-              {/* <li>
-                <Link href="#" className="hover:text-white">Cursos Online</Link>
-              </li> */}
+              <li>
+                <Link 
+                  href="https://cursos.felixpet.com.br" 
+                  className="hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Curso Cães Felizes
+                </Link>
+              </li>
               <li>
                 <Link href="https://blog.felixpet.com.br" className="hover:text-white">Blog</Link>
               </li>

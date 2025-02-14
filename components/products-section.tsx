@@ -1,4 +1,5 @@
 import { Lightbulb, Dog } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 export function ProductsSection() {
   return (
@@ -8,14 +9,27 @@ export function ProductsSection() {
           <div className="space-y-6">
             <span className="text-white text-lg font-medium">NOSSOS PRODUTOS</span>
             <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              Dono Feliz(EM BREVE)
+              Cães Felizes
             </h2>
             <p className="text-white text-lg">
-              O curso online sobre enriquecimento ambiental para cães.
+              E-book completo sobre enriquecimento ambiental para cães de todas as idades.
             </p>
-            {/* <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#5BC0DE]">
-              Saiba Mais
-            </Button> */}
+            <div className="space-y-4">
+              <p className="text-white text-lg font-semibold">Inclui:</p>
+              <ul className="text-white space-y-2">
+                <li>✓ E-book em formato PDF</li>
+                <li>✓ Acesso vitalício ao conteúdo</li>
+                <li>✓ Atualizações gratuitas</li>
+                <li>✓ Guia de Brinquedos DIY</li>
+                <li>✓ Calendário de Atividades</li>
+              </ul>
+              {/* <p className="text-white text-2xl font-bold">
+                R$ 46,90
+              </p> */}
+            </div>
+            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#5BC0DE]">
+              Comprar Agora
+            </Button>
           </div>
           
           <div className="flex justify-center">
